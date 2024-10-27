@@ -317,19 +317,22 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .certification-item {
-   display: block;
-   margin-bottom: 48px;
-   padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8;
-   font-size: 16px;
-   line-height: 1.5;
-   color: #333;
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E8E8E8;
+    display: flex;
+    align-items: center;
 }
 
 .certification-image {
    width: 80px; /* adjust as needed */
    height: auto;
    margin-right: 16px; /* space between image and text */
+}
+
+.certification-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .certification-item h3 {
