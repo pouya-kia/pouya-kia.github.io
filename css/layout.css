@@ -317,9 +317,13 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .certification-item {
+   display: block;
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #333;
 }
 
 .certification-item h3 {
