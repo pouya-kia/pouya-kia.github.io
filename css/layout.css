@@ -1026,3 +1026,23 @@ footer .social-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #0F9095; }
+
+
+#roles {
+    background-color: #f8f8f8; /* Adjust background color if needed */
+    padding: 50px 0;
+    text-align: center;
+}
+
+#roles .six.columns {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    margin: 1%;
+}
+
+.role-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional styling for rounded edges */
+}
