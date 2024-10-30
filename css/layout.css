@@ -1031,15 +1031,16 @@ footer .social-links li:first-child { margin-left: 0; }
     background-color: #f8f8f8;
     padding: 50px 0;
     display: flex;
-    justify-content: center; /* Center all items horizontally */
+    justify-content: center;
 }
 
 .certifications-container {
     display: flex;
-    flex-wrap: nowrap; /* Keep all items in a single row */
+    flex-wrap: nowrap; /* Prevent wrapping to keep items in a single row */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
     gap: 20px; /* Space between each certificate */
-    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
     padding: 20px;
+    max-width: 100%;
 }
 
 .certificate-card {
@@ -1048,7 +1049,8 @@ footer .social-links li:first-child { margin-left: 0; }
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    flex: 0 0 300px; /* Each card takes up 300px of width */
+    flex: 0 0 250px; /* Each card has a fixed width of 250px */
+    max-width: 250px; /* Ensures all cards stay the same width */
     box-sizing: border-box;
 }
 
