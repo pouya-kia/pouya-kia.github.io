@@ -979,6 +979,14 @@ footer .social-links li:first-child { margin-left: 0; }
     justify-content: center; /* Centers the cards */
 }
 
+.certificate-title {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'opensans-bold', sans-serif; /* or another font you prefer */
+    color: #333;
+    margin-bottom: 20px;
+}
+
 .certificate-card {
     background-color: #fff;
     border-radius: 8px;
