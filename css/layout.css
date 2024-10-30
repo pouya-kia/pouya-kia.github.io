@@ -1027,7 +1027,7 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
-#certifications {
+#certificates {
     background-color: #f8f8f8;
     padding: 50px 0;
     display: flex;
@@ -1035,47 +1035,38 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 
 .certifications-container {
-    display: block; /* Stack items vertically */
-    max-width: 700px; /* Limit the width to align with the Work section */
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep items in a single row */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    gap: 20px; /* Space between each certificate */
     padding: 20px;
+    max-width: 100%;
 }
 
-.certifications-card {
+.certificate-card {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-bottom: 20px; /* Space between items */
-    text-align: left;
-    border-bottom: 1px solid #E8E8E8; /* Optional line between items */
+    text-align: center;
+    flex: 0 0 250px; /* Each card has a fixed width of 250px */
+    max-width: 250px; /* Ensures all cards stay the same width */
     box-sizing: border-box;
 }
 
-.certifications-card h3 {
-    font-size: 1.2em;
-    color: #2c3e50;
-    margin: 0;
-}
-
-.institution {
-    font-weight: bold;
-    color: #555;
-    margin-top: 5px;
-}
-
-.description {
-    font-size: 0.9em;
-    color: #777;
-    margin-top: 5px;
-    line-height: 1.5;
+.certificate-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .certifications-container {
-        padding: 10px;
+        flex-wrap: wrap; /* Allow wrapping on small screens */
     }
-    .certifications-card {
-        padding: 15px;
+    .certificate-card {
+        flex: 1 1 100%; /* Full width for each card on smaller screens */
     }
 }
