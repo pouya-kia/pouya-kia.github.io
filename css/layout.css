@@ -1034,9 +1034,10 @@ footer .social-links li:first-child { margin-left: 0; }
 
 .certifications-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Aligns items to the center horizontally */
-    gap: 30px; /* Adds space between each card */
+    flex-wrap: nowrap;
+    justify-content: space-between; /* Aligns items to the center horizontally */
+    gap: 20px; /* Adds space between each card */
+    overflow-x: auto;
     padding: 20px;
 }
 
@@ -1046,10 +1047,9 @@ footer .social-links li:first-child { margin-left: 0; }
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    flex: 1 1 250px; /* Each card takes up at least 250px of space */
-    max-width: 250px; /* Ensures cards don’t grow too large */
+    flex: 1 1 220px; /* Each card takes up at least 250px of space */
+    max-width: 220px; /* Ensures cards don’t grow too large */
     box-sizing: border-box;
-    margin: 10px;
 }
 
 .certificate-image {
