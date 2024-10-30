@@ -980,10 +980,14 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 
 .certificate-title {
-    text-align: center;
-    font-size: 28px;
-    font-family: 'opensans-bold', sans-serif; /* or another font you prefer */
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
     color: #333;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #11ABB0;
+    padding-bottom: 6px;
     margin-bottom: 20px;
 }
 
