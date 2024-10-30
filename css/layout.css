@@ -1036,7 +1036,7 @@ footer .social-links li:first-child { margin-left: 0; }
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Aligns items to the center horizontally */
-    gap: 20px; /* Adds space between each card */
+    gap: 30px; /* Adds space between each card */
     padding: 20px;
 }
 
@@ -1049,6 +1049,7 @@ footer .social-links li:first-child { margin-left: 0; }
     flex: 1 1 250px; /* Each card takes up at least 250px of space */
     max-width: 250px; /* Ensures cards don’t grow too large */
     box-sizing: border-box;
+    margin: 10px;
 }
 
 .certificate-image {
