@@ -971,11 +971,12 @@ footer .social-links li:first-child { margin-left: 0; }
 
 .certifications-container {
     display: flex;
-    flex-wrap: nowrap; /* Prevent wrapping to keep items in a single row */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    flex-wrap: wrap; /* Allows wrapping */
+    overflow-x: auto;
     gap: 20px; /* Space between each certificate */
     padding: 20px;
     max-width: 100%;
+    justify-content: center; /* Centers the cards */
 }
 
 .certificate-card {
@@ -984,9 +985,10 @@ footer .social-links li:first-child { margin-left: 0; }
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    flex: 0 0 250px; /* Each card has a fixed width of 250px */
-    max-width: 250px; /* Ensures all cards stay the same width */
+    flex: 0 0 250px; /* Fixed width */
+    max-width: 250px;
     box-sizing: border-box;
+    margin-bottom: 20px; /* Adds spacing below each card */
 }
 
 .certificate-image {
@@ -999,8 +1001,14 @@ footer .social-links li:first-child { margin-left: 0; }
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .certifications-container {
-        flex-wrap: wrap; /* Allow wrapping on small screens */
+        flex-wrap: wrap; /* Allows wrapping on small screens */
     }
+    .certificate-card {
+        flex: 1 1 calc(50% - 20px); /* Two cards per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
     .certificate-card {
         flex: 1 1 100%; /* Full width for each card on smaller screens */
     }
