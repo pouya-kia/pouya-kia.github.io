@@ -187,7 +187,7 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #2B2B2B;
+   background: #2596be;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -286,71 +286,6 @@ ul#nav li.current a { color: #F06000; }
 /* Certifications Section
 /* ------------------------------------------------------------------ */
 
-#certifications {
-   background: #f8f8f8;  /* or choose a color that fits your theme */
-   padding-top: 90px;
-   padding-bottom: 72px;
-   overflow: hidden;
-}
-
-#certifications h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-}
-
-#certifications h1 span {
-   border-bottom: 3px solid #11ABB0;
-   padding-bottom: 6px;
-}
-
-#certifications h3 {
-   font: 25px/30px 'opensans-bold', sans-serif;
-}
-
-#certifications .header-col {
-   padding-top: 9px;
-}
-
-#certifications .main-col {
-   padding-right: 10%;
-}
-
-.certification-item {
-    margin-bottom: 48px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #E8E8E8;
-    display: flex;
-    align-items: center;
-}
-
-.certification-image {
-   width: 80px; /* adjust as needed */
-   height: auto;
-   margin-right: 16px; /* space between image and text */
-}
-
-.certification-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.certification-item h3 {
-   font-size: 20px;
-   color: #313131;
-}
-
-.certification-item .date {
-   font: 15px/24px 'opensans-regular', sans-serif;
-   margin-top: 6px;
-   color: #666;
-}
-
-.certification-item .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
-   margin-top: 6px;
-}
 
 
 /*----------------------------------------------*/
