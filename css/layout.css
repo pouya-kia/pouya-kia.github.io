@@ -1027,29 +1027,17 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
-
-#roles {
-    background-color: #f8f8f8; /* Adjust background color if needed */
-    padding: 50px 0;
-    text-align: center;
-}
-
-#roles .six.columns {
-    display: inline-block;
-    width: 48%;
-    vertical-align: top;
-    margin: 1%;
-}
-
-.role-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; /* Optional styling for rounded edges */
-}
-
 #certificates {
     background-color: #f8f8f8;
     padding: 50px 0;
+}
+
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Aligns items to the center horizontally */
+    gap: 20px; /* Adds space between each card */
+    padding: 20px;
 }
 
 .certificate-card {
@@ -1058,7 +1046,9 @@ footer .social-links li:first-child { margin-left: 0; }
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    margin: 20px;
+    flex: 1 1 250px; /* Each card takes up at least 250px of space */
+    max-width: 250px; /* Ensures cards don’t grow too large */
+    box-sizing: border-box;
 }
 
 .certificate-image {
@@ -1087,6 +1077,7 @@ footer .social-links li:first-child { margin-left: 0; }
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .certificate-card {
-        width: 100%;
+        flex: 1 1 100%; /* Each card takes full width on small screens */
+        max-width: 100%;
     }
 }
