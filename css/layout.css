@@ -1030,14 +1030,13 @@ footer .social-links li:first-child { margin-left: 0; }
 #certificates {
     background-color: #f8f8f8;
     padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the column in the page */
 }
 
 .certifications-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between; /* Aligns items to the center horizontally */
-    gap: 20px; /* Adds space between each card */
-    overflow-x: auto;
+    display: block; /* Stack items vertically */
     padding: 20px;
 }
 
@@ -1047,8 +1046,8 @@ footer .social-links li:first-child { margin-left: 0; }
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    flex: 1 1 220px; /* Each card takes up at least 250px of space */
-    max-width: 220px; /* Ensures cards don’t grow too large */
+    max-width: 500px; /* Ensures all cards have the same width */
+    margin: 20px 0; /* Adds vertical space between cards */
     box-sizing: border-box;
 }
 
@@ -1059,26 +1058,10 @@ footer .social-links li:first-child { margin-left: 0; }
     margin-bottom: 15px;
 }
 
-.certificate-card h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.institution {
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.description {
-    font-size: 0.9em;
-    color: #777;
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .certificate-card {
-        flex: 1 1 100%; /* Each card takes full width on small screens */
+        width: 100%;
         max-width: 100%;
     }
 }
