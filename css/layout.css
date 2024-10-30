@@ -1026,3 +1026,55 @@ footer .social-links li:first-child { margin-left: 0; }
         flex: 1 1 100%; /* Full width for each card on smaller screens */
     }
 }
+
+/* ------------------------------------------------------------------ */
+/* Skill
+/* ------------------------------------------------------------------ */
+
+#skills {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.skills-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #11ABB0;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    max-width: 800px; /* Adjust width as needed */
+    margin: 0 auto;
+}
+
+.skills-list {
+    columns: 4; /* Set the number of columns */
+    column-gap: 30px; /* Adjust spacing between columns */
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .skills-list {
+        columns: 2; /* Adjust columns for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills-list {
+        columns: 1; /* Stacks all items in one column for mobile screens */
+    }
+}
